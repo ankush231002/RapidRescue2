@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rapid Rescue</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="nav">
+      <div class="logo">
+        <img src="/assets/icons8-ambulance.gif" alt="Logo">
+        <h3>RapidRescue</h3>
+      </div>
+      <div class="navElement">
+        <ul>
+          <li>Home</li>
+          <li>Ambulance</li>
+          <li>Join Us</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Gallery</li>
+          <li>Call Now</li>
+        </ul>
+      </div>
+    </div>
+    <div class="video-container">
+      <video class="video" loop muted autoplay>
+        <source src="/backgroundVideos/videoplayback.mp4" type="video/mp4">
+      </video>
+      <div class="content">
+        <div class="content-head">
+          <div class="hospital-list">
+            <button id="find-hospitals">Find Nearest Hospitals</button>
+            <div id="results"></div>
+          </div>
+          <div class="form-container">
+            <form id="hospital-form">
+              <h2>Update Hospital Information</h2>
+              <label for="name">Hospital Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="phone">Phone Number:</label>
+              <input type="text" id="phone" name="phone" required>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
